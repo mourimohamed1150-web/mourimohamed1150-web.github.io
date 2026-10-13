@@ -1,23 +1,32 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071321"><meta name="description"
-content="الموقع الشخصي الرسمي لموري محمد، مهتم بالهندسة الكهربائية والبرمجة والروبوتيك، وصاحب مشروع Rubble Mouri للحلول الإلكترونية للحماية.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="author" content="موري محمد">  <title>موري محمد | الموقع الرسمي</title>  <style>
+  <meta name="google-site-verification" content="EpCVwbIhSkopYsneCpMnbJ5PO1QS0BwWCBZQtDpP2Kg">
+
+  <meta name="description" content="الموقع الشخصي لموري محمد، مهتم بالتكنولوجيا والبرمجة والكهرباء والإلكترونيات والروبوتيك والابتكار الرقمي.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#071426">
+
+  <title>موري محمد | الموقع الشخصي الرسمي</title>
+
+  <style>
     :root {
-      --bg: #071321;
-      --surface: #0e1e31;
-      --surface2: #132943;
-      --blue: #43c5ff;
-      --white: #f3f7ff;
-      --muted: #a8b8ce;
-      --border: rgba(255,255,255,.11);
+      --background: #071426;
+      --surface: #10213a;
+      --surface-light: #172c49;
+      --primary: #48a9ff;
+      --text: #f3f7ff;
+      --muted: #afbed2;
+      --border: rgba(255,255,255,.10);
     }
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html {
@@ -25,10 +34,9 @@ content="الموقع الشخصي الرسمي لموري محمد، مهتم �
     }
 
     body {
-      margin: 0;
       font-family: Arial, Tahoma, sans-serif;
-      background: var(--bg);
-      color: var(--white);
+      background: var(--background);
+      color: var(--text);
       line-height: 1.9;
     }
 
@@ -38,454 +46,518 @@ content="الموقع الشخصي الرسمي لموري محمد، مهتم �
     }
 
     .container {
-      width: min(1080px, 92%);
+      width: min(1100px, 91%);
       margin: auto;
     }
 
     header {
       position: sticky;
       top: 0;
-      z-index: 20;
-      background: rgba(7,19,33,.96);
-      border-bottom: 1px solid var(--border);
+      z-index: 10;
+      background: rgba(7,20,38,.94);
       backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
     }
 
-    .navbar {
-      min-height: 75px;
+    nav {
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 18px;
       flex-wrap: wrap;
       padding: 12px 0;
     }
 
-    .logo {
+    .brand {
+      font-size: 23px;
       font-weight: 800;
-      font-size: 20px;
-      color: var(--blue);
-      letter-spacing: .5px;
     }
 
-    nav {
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-links {
       display: flex;
+      gap: 18px;
       flex-wrap: wrap;
-      gap: 17px;
-    }
-
-    nav a {
+      font-size: 14px;
       color: var(--muted);
-      font-size: 13px;
     }
 
-    nav a:hover,
-    .link:hover {
-      color: var(--blue);
+    .nav-links a:hover {
+      color: var(--primary);
     }
 
     .hero {
-      margin-top: 35px;
-      padding: 65px 24px;
-      text-align: center;
-      border: 1px solid var(--border);
-      border-radius: 28px;
+      padding: 100px 0 85px;
       background:
-        radial-gradient(
-          circle at 15% 10%,
-          rgba(67,197,255,.19),
-          transparent 40%
-        ),
-        linear-gradient(140deg, #102743, #0b1728);
-      overflow: hidden;
+        radial-gradient(ellipse at top left,
+        rgba(41,132,255,.18), transparent 55%);
     }
 
-    .monogram {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 20px;
-      display: grid;
-      place-items: center;
-      border-radius: 28px;
-      border: 2px solid var(--blue);
-      background: var(--surface2);
-      color: var(--blue);
-      font-size: 35px;
-      font-weight: 800;
-      box-shadow: 0 0 35px rgba(67,197,255,.1);
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      font-size: 13px;
-      letter-spacing: 1px;
-    }
-
-    h1 {
-      font-size: clamp(34px, 7vw, 55px);
-      line-height: 1.4;
-      margin: 8px 0;
-    }
-
-    .hero p {
-      max-width: 680px;
-      margin: 12px auto;
-      color: var(--muted);
-    }
-
-    .actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 12px;
-      border: 1px solid var(--blue);
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .button.primary {
-      background: var(--blue);
-      color: #061321;
-    }
-
-    .button.secondary {
-      color: var(--white);
-    }
-
-    section {
-      padding-top: 55px;
-      scroll-margin-top: 95px;
-    }
-
-    .section-heading {
-      margin-bottom: 20px;
-    }
-
-    .section-heading h2 {
-      font-size: 27px;
-      margin: 0;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-      margin: 3px 0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-      gap: 17px;
-    }
-
-    .card {
-      min-width: 0;
-      padding: 23px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 19px;
-    }
-
-    .card h3 {
-      margin: 5px 0 10px;
-      color: var(--blue);
-      font-size: 19px;
-    }
-
-    .card p {
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .symbol {
-      font-size: 29px;
-    }
-
-    .brand-name {
-      color: var(--blue);
-      font-size: 24px;
-      font-weight: 800;
-      direction: ltr;
-      text-align: right;
+    .hero-content {
+      max-width: 800px;
     }
 
     .tag {
       display: inline-block;
-      padding: 4px 10px;
-      margin: 10px 0 0 5px;
+      color: #8ecaff;
+      border: 1px solid rgba(72,169,255,.35);
+      background: rgba(72,169,255,.08);
+      padding: 5px 14px;
       border-radius: 30px;
-      background: #17334d;
-      color: #b4e7ff;
-      font-size: 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
     }
 
-    .highlight {
-      background:
-        linear-gradient(135deg, #102b48, #0c1a2b);
-      border-color: rgba(67,197,255,.3);
+    h1 {
+      font-size: clamp(36px, 7vw, 62px);
+      line-height: 1.35;
+      margin-bottom: 18px;
     }
 
-    .certificate-image {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: contain;
-      display: block;
-      background: #fff;
+    h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 26px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 23px;
       border-radius: 10px;
-      margin-bottom: 15px;
+      background: var(--primary);
+      color: #061427;
+      font-weight: bold;
+      margin: 5px 0 5px 8px;
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 65px 0;
+      scroll-margin-top: 90px;
+    }
+
+    .section-heading {
+      margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p,
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 24px;
+      border-radius: 17px;
+      min-width: 0;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(72,169,255,.5);
+    }
+
+    .symbol {
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .about-box,
+    .contact-box {
+      background: linear-gradient(135deg,
+        var(--surface), var(--surface-light));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .about-box p,
+    .contact-box p {
+      color: var(--muted);
+      margin-top: 8px;
     }
 
     .certificate-placeholder {
-      aspect-ratio: 4 / 3;
-      display: grid;
-      place-items: center;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
       padding: 15px;
-      background: #132943;
-      border: 1px dashed #45617e;
-      border-radius: 10px;
+      text-align: center;
       color: var(--muted);
-      margin-bottom: 15px;
+      background: #09172a;
+      border: 1px dashed #47617e;
+      border-radius: 10px;
+      margin-bottom: 18px;
+    }
+
+    .certificate-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 330px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      background: #fff;
+    }
+
+    [hidden] {
+      display: none !important;
     }
 
     .small {
-      font-size: 12px;
+      font-size: 13px;
       color: var(--muted);
-    }
-
-    .contact-box {
-      padding: 28px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      border-radius: 20px;
+      margin-top: 18px;
     }
 
     footer {
-      margin-top: 60px;
-      padding: 28px 15px;
-      text-align: center;
       border-top: 1px solid var(--border);
+      padding: 25px 0;
+      text-align: center;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 14px;
     }
 
-    @media (max-width: 650px) {
-      .navbar {
+    @media (max-width: 760px) {
+      nav {
         justify-content: center;
       }
 
-      nav {
+      .nav-links {
         justify-content: center;
-        gap: 10px 15px;
+        gap: 12px;
       }
 
       .hero {
-        padding: 45px 18px;
+        padding: 65px 0;
       }
 
-      section {
-        padding-top: 38px;
+      .grid {
+        grid-template-columns: 1fr;
       }
 
-      .card {
-        padding: 19px;
+      .section-heading h2 {
+        font-size: 26px;
+      }
+
+      .hero p {
+        font-size: 16px;
       }
     }
-  </style></head><body><header>
-  <div class="container navbar">
-    <a class="logo" href="#home">MOURI MOHAMED</a><nav aria-label="القائمة الرئيسية">
-  <a href="#about">من أنا</a>
-  <a href="#rubble">مشروعي</a>
-  <a href="#projects">المشاريع</a>
-  <a href="#certificates">الشهادات</a>
-  <a href="#contact">التواصل</a>
-</nav>
+  </style>
+</head>
 
+<body>
+
+<header>
+  <nav class="container">
+    <a class="brand" href="#home">موري <span>محمد</span></a>
+
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">نبذة عني</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#skills">المهارات</a>
+      <a href="#certificates">الشهادات</a>
+      <a href="#contact">التواصل</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="tag">التكنولوجيا • البرمجة • الابتكار</span>
+
+      <h1>مرحبًا، أنا <span>موري محمد</span></h1>
+
+      <p>
+        مهتم بالتكنولوجيا والبرمجة والكهرباء والإلكترونيات
+        والروبوتيك. أعمل على تطوير مهاراتي وبناء أفكار
+        ومشاريع رقمية وتقنية يمكن أن تقدم حلولًا مفيدة للناس.
+      </p>
+
+      <a class="button" href="#projects">اكتشف مشاريعي</a>
+      <a class="button secondary" href="#about">تعرّف عليّ</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-heading">
+        <h2>نبذة عني</h2>
+        <p>التعلم المستمر وتحويل الأفكار إلى مشاريع عملية.</p>
+      </div>
+
+      <div class="about-box">
+        <h3>من أنا؟</h3>
+        <p>
+          أنا موري محمد، مهتم بالمجالات التقنية والابتكار الرقمي.
+          أسعى إلى تطوير معرفتي في البرمجة والأنظمة الإلكترونية
+          والأمن التقني، والعمل على مشاريع تساعد في حل مشكلات
+          واقعية بطريقة عملية ومسؤولة.
+        </p>
+        <p>
+          أؤمن بأن التعلم والتجربة والتطوير المستمر هي أساس
+          بناء منتجات تقنية مفيدة.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-heading">
+        <h2>المشاريع</h2>
+        <p>أفكار ومبادرات تقنية أعمل على تطويرها.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="symbol">◈</div>
+          <h3>Rubble Mouri</h3>
+          <p>
+            مشروع تقني قيد التطوير يهدف إلى استكشاف حلول
+            إلكترونية للحماية والمساعدة في الحد من فقدان
+            الممتلكات أو سرقتها، بما في ذلك أنظمة التنبيه والتتبع.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⌘</div>
+          <h3>التطبيقات الرقمية</h3>
+          <p>
+            تطوير أفكار لتطبيقات ومواقع رقمية تسعى إلى
+            تسهيل الاستخدام اليومي وتقديم خدمات مفيدة.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⚙</div>
+          <h3>الأنظمة الذكية</h3>
+          <p>
+            استكشاف الإلكترونيات وأنظمة التحكم والروبوتيك
+            والعمل على نماذج أولية للأفكار التقنية.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-heading">
+        <h2>المهارات والاهتمامات التقنية</h2>
+        <p>مجالات أتعلمها وأعمل على تطوير قدراتي فيها.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="symbol">⌨</div>
+          <h3>الإعلام الآلي</h3>
+          <p>
+            التعامل مع الحاسوب والبرامج والأدوات الرقمية
+            وتعلم استخدام التقنيات الحديثة.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">{"</>"}</div>
+          <h3>البرمجة</h3>
+          <p>
+            تطوير المهارات البرمجية والعمل على أفكار
+            تطبيقات ومشاريع رقمية.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">ϟ</div>
+          <h3>الكهرباء والإلكترونيات</h3>
+          <p>
+            التعلم والتجريب في الدوائر الإلكترونية
+            وأنظمة التحكم والحماية.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⚙</div>
+          <h3>الروبوتيك والابتكار</h3>
+          <p>
+            استكشاف الأنظمة الذكية والروبوتات
+            وتطوير نماذج أولية للأفكار التقنية.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">⌕</div>
+          <h3>الأمن السيبراني</h3>
+          <p>
+            تعلم مبادئ حماية الأنظمة والشبكات
+            واختبار الأمان في البيئات المصرح بها.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">✦</div>
+          <h3>حل المشكلات</h3>
+          <p>
+            البحث عن حلول عملية وتطوير الأفكار
+            من خلال التعلم والتجربة.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <div class="section-heading">
+        <h2>الشهادات والمهارات</h2>
+        <p>مساحة لعرض الشهادات الحقيقية والموثقة.</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="certificate-placeholder" id="placeholder1">
+            صورة شهادة الإعلام الآلي
+          </div>
+
+          <img class="certificate-image"
+               id="certificate1"
+               src="certificates/certificate1.jpg"
+               alt="شهادة مهارات الإعلام الآلي"
+               hidden>
+
+          <h3>الإعلام الآلي</h3>
+          <p>
+            مجال متعلق بمهارات استخدام الحاسوب والتقنيات الرقمية.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="certificate-placeholder" id="placeholder2">
+            صورة شهادة البرمجة والأمن السيبراني
+          </div>
+
+          <img class="certificate-image"
+               id="certificate2"
+               src="certificates/certificate2.jpg"
+               alt="شهادة البرمجة والأمن السيبراني"
+               hidden>
+
+          <h3>البرمجة والأمن السيبراني</h3>
+          <p>
+            مجال متعلق بالبرمجة ومبادئ حماية الأنظمة الرقمية.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="certificate-placeholder" id="placeholder3">
+            صورة شهادة الكهرباء والروبوتيك
+          </div>
+
+          <img class="certificate-image"
+               id="certificate3"
+               src="certificates/certificate3.jpg"
+               alt="شهادة الكهرباء والروبوتيك"
+               hidden>
+
+          <h3>الكهرباء والروبوتيك</h3>
+          <p>
+            مجال متعلق بالكهرباء والإلكترونيات والأنظمة الذكية.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="small">
+        تظهر الصور بعد رفع ملفات الشهادات الصحيحة إلى مجلد
+        certificates داخل المستودع. لا تعرض شهادة على أنها
+        رسمية إلا إذا كانت صادرة فعلًا عن الجهة المذكورة.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h2>التواصل</h2>
+        <p>للاستفسارات المهنية والتعاون في المشاريع التقنية.</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>هل لديك فكرة أو مشروع تقني؟</h3>
+        <p>
+          يمكن إضافة وسيلة تواصل مخصصة هنا عند تجهيز
+          بريد إلكتروني مهني مناسب.
+        </p>
+        <p class="small">
+          لم تتم إضافة بريد إلكتروني أو رقم هاتف في الوقت الحالي.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>موري محمد | الموقع الشخصي</p>
+    <p>© 2026 — جميع الحقوق محفوظة</p>
   </div>
-</header><main class="container">  <section class="hero" id="home">
-    <div class="monogram">MM</div><div class="eyebrow">الموقع الشخصي الرسمي</div>
+</footer>
 
-<h1>موري محمد</h1>
-
-<p>
-  مهتم بالتكنولوجيا والهندسة الكهربائية والبرمجة والروبوتيك،
-  وأسعى إلى تطوير أفكار تقنية وتحويلها إلى مشاريع عملية.
-</p>
-
-<div class="actions">
-  <a class="button primary" href="#about">اكتشف مسيرتي</a>
-  <a class="button secondary" href="#rubble">تعرّف على Rubble Mouri</a>
-</div>
-
-  </section>  <section id="about">
-    <div class="section-heading">
-      <h2>من أنا؟</h2>
-      <p>التعريف الشخصي والاهتمامات التقنية.</p>
-    </div><div class="card">
-  <p>
-    أنا موري محمد، من ولاية تمنراست في الجزائر.
-    أدرس في مجال تقني رياضي بتخصص الهندسة الكهربائية،
-    وأهتم بالإعلام الآلي والبرمجة والأمن السيبراني
-    والكهرباء والروبوتيك.
-  </p>
-
-  <p style="margin-top:14px">
-    أعمل على تنمية مهاراتي من خلال التعلم والتجارب
-    والمشاريع التقنية، وأهدف إلى تطوير حلول مفيدة
-    تجمع بين الإلكترونيات والبرمجيات والابتكار.
-  </p>
-
-  <span class="tag">الهندسة الكهربائية</span>
-  <span class="tag">البرمجة</span>
-  <span class="tag">الأمن السيبراني</span>
-  <span class="tag">الروبوتيك</span>
-</div>
-
-  </section>  <section id="rubble">
-    <div class="section-heading">
-      <h2>مشروعي التقني</h2>
-      <p>فكرة أعمل على تطويرها خطوة بخطوة.</p>
-    </div><div class="card highlight">
-  <div class="brand-name">Rubble Mouri</div>
-
-  <h3>حلول إلكترونية للحماية</h3>
-
-  <p>
-    Rubble Mouri مشروع صغير بدأت العمل عليه،
-    ويهدف إلى تطوير حلول إلكترونية تساعد على حماية
-    الممتلكات والحد من السرقة والضياع.
-  </p>
-
-  <p style="margin-top:14px">
-    تشمل مجالات العمل المستهدفة أنظمة الإنذار
-    الإلكترونية، وحلول التتبع، والتقنيات التي تساعد
-    على تحسين مراقبة الممتلكات وحمايتها.
-  </p>
-
-  <span class="tag">أنظمة الإنذار</span>
-  <span class="tag">التتبع</span>
-  <span class="tag">الإلكترونيات</span>
-  <span class="tag">الحماية التقنية</span>
-
-  <p class="small" style="margin-top:17px">
-    المشروع قيد التطوير، وستتم إضافة تفاصيل النماذج
-    الأولية والمنتجات والخدمات عند توفرها.
-  </p>
-</div>
-
-  </section>  <section id="projects">
-    <div class="section-heading">
-      <h2>المشاريع والاهتمامات</h2>
-      <p>مساحة لتوثيق التجارب والأعمال التقنية.</p>
-    </div><div class="grid">
-  <article class="card">
-    <div class="symbol">⌘</div>
-    <h3>البرمجة والإعلام الآلي</h3>
-    <p>
-      تطوير المهارات البرمجية والعمل على أفكار
-      تطبيقات ومشاريع رقمية.
-    </p>
-  </article>
-
-  <article class="card">
-    <div class="symbol">ϟ</div>
-    <h3>الكهرباء والإلكترونيات</h3>
-    <p>
-      التعلم والتجريب في الدوائر الإلكترونية
-      وأنظمة التحكم والحماية.
-    </p>
-  </article>
-
-  <article class="card">
-    <div class="symbol">⚙</div>
-    <h3>الروبوتيك والابتكار</h3>
-    <p>
-      استكشاف الأنظمة الذكية والروبوتات
-      وتطوير نماذج أولية للأفكار التقنية.
-    </p>
-  </article>
-</div>
-
-  </section>  <section id="certificates">
-    <div class="section-heading">
-      <h2>الشهادات والمهارات</h2>
-      <p>معرض الشهادات التي حصلت عليها.</p>
-    </div><div class="grid">
-
-  <article class="card">
-    <div class="certificate-placeholder" id="placeholder1">
-      صورة شهادة الإعلام الآلي
-    </div>
-    <img class="certificate-image"
-         id="certificate1"
-         src="certificates/certificate1.jpg"
-         alt="شهادة مهارات الإعلام الآلي"
-         hidden>
-    <h3>الإعلام الآلي</h3>
-    <p>شهادة في مهارات الإعلام الآلي.</p>
-  </article>
-
-  <article class="card">
-    <div class="certificate-placeholder" id="placeholder2">
-      صورة شهادة البرمجة والأمن السيبراني
-    </div>
-    <img class="certificate-image"
-         id="certificate2"
-         src="certificates/certificate2.jpg"
-         alt="شهادة البرمجة والأمن السيبراني"
-         hidden>
-    <h3>البرمجة والأمن السيبراني</h3>
-    <p>شهادة في المهارات المتعلقة بالبرمجة والأمن السيبراني.</p>
-  </article>
-
-  <article class="card">
-    <div class="certificate-placeholder" id="placeholder3">
-      صورة شهادة الكهرباء والروبوتيك
-    </div>
-    <img class="certificate-image"
-         id="certificate3"
-         src="certificates/certificate3.jpg"
-         alt="شهادة الكهرباء والروبوتيك"
-         hidden>
-    <h3>الكهرباء والروبوتيك</h3>
-    <p>شهادة في مجال الكهرباء والروبوتيك.</p>
-  </article>
-
-</div>
-
-<p class="small" style="margin-top:14px">
-  ستظهر صور الشهادات بعد رفع ملفات الصور إلى المستودع.
-</p>
-
-  </section>  <section id="contact">
-    <div class="section-heading">
-      <h2>التواصل</h2>
-      <p>للاستفسارات المهنية والتعاون في المشاريع التقنية.</p>
-    </div><div class="contact-box">
-  <h3>هل لديك فكرة أو مشروع تقني؟</h3>
-  <p>
-    يمكن إضافة بريد إلكتروني مخصص للتواصل المهني
-    هنا بعد اختيار عنوان مناسب.
-  </p>
-  <p class="small">
-    لم تتم إضافة عنوان بريد أو رقم هاتف حتى الآن.
-  </p>
-</div>
-
-  </section></main><footer>
-  <p>موري محمد | الموقع الشخصي الرسمي</p>
-  <p>© 2026 — جميع الحقوق محفوظة</p>
-</footer><script>
+<script>
   for (let i = 1; i <= 3; i++) {
     const img = document.getElementById("certificate" + i);
-    const placeholder = document.getElementById("placeholder" + i);
+    const placeholder =
+      document.getElementById("placeholder" + i);
 
     img.addEventListener("load", function () {
       img.hidden = false;
@@ -497,5 +569,7 @@ content="الموقع الشخصي الرسمي لموري محمد، مهتم �
       placeholder.hidden = false;
     });
   }
-</script></body>
-</html>
+</script>
+
+</body>
+  </html>
