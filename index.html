@@ -2,87 +2,65 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>RUE Mouri | موري محمد - مطور البرمجيات والتقنيات</title>
-<meta name="description" content="RUE Mouri هو الموقع الشخصي لموري محمد، مطور برمجيات ومهتم بالأمن السيبراني والهندسة الكهربائية والإلكترونيات والروبوتات والأنظمة الذكية من الجزائر.">
-<meta name="keywords" content="RUE Mouri, موري محمد, Mohamed Mouri, Rubble Mouri, مطور برمجيات جزائري, البرمجة, الأمن السيبراني, الهندسة الكهربائية, الروبوتات, تطوير التطبيقات">
+<title>RUE Mouri | موري محمد - مطور تقني جزائري</title>
+<meta name="description" content="الموقع الرسمي RUE Mouri للمطور موري محمد من الجزائر. البرمجة وتطوير التطبيقات والمواقع، الأمن السيبراني، الهندسة الكهربائية، الإلكترونيات والروبوتات.">
+<meta name="keywords" content="RUE Mouri, موري محمد, Mohamed Mouri, مطور جزائري, برمجة, أمن سيبراني, هندسة كهربائية, إلكترونيات, روبوتات, تطبيقات أندرويد">
 <meta name="author" content="Mohamed Mouri">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#071b19">
-
+<meta name="theme-color" content="#10141e">
 <link rel="canonical" href="https://mourimohamed1150-web.github.io/">
+<link rel="icon" type="image/png" href="rue-mouri-logo.png">
 
-<!-- Google Search Console -->
 <meta name="google-site-verification" content="EpCVwbIhSkopYsneCpMnbJ5PO1QS0BwWCBZQtDpP2Kg">
 
-<!-- أيقونة الموقع -->
-<link rel="icon" type="image/png" href="rue-mouri-logo.png">
-<link rel="apple-touch-icon" href="rue-mouri-logo.png">
-
-<!-- صورة المشاركة -->
 <meta property="og:site_name" content="RUE Mouri">
 <meta property="og:title" content="RUE Mouri | موري محمد">
-<meta property="og:description" content="الموقع الشخصي لموري محمد: البرمجة، الأمن السيبراني، الهندسة الكهربائية والابتكار التقني.">
+<meta property="og:description" content="البرمجة والهندسة والابتكار التقني من الجزائر.">
 <meta property="og:url" content="https://mourimohamed1150-web.github.io/">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="ar_DZ">
 <meta property="og:image" content="https://mourimohamed1150-web.github.io/rue-mouri-logo.png">
+<meta property="og:locale" content="ar_DZ">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="RUE Mouri | موري محمد">
-<meta name="twitter:description" content="الموقع الشخصي والمشاريع التقنية لموري محمد.">
+<meta name="twitter:title" content="RUE Mouri | Mohamed Mouri">
 <meta name="twitter:image" content="https://mourimohamed1150-web.github.io/rue-mouri-logo.png">
-
-<!-- بيانات الموقع لمحركات البحث -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "RUE Mouri",
-  "alternateName": ["موري محمد", "Mohamed Mouri"],
-  "url": "https://mourimohamed1150-web.github.io/",
-  "inLanguage": "ar"
-}
-</script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Mohamed Mouri",
-  "alternateName": "موري محمد",
+  "alternateName": ["موري محمد", "RUE Mouri"],
   "url": "https://mourimohamed1150-web.github.io/",
   "image": "https://mourimohamed1150-web.github.io/rue-mouri-logo.png",
-  "email": "mourimohamed1150@gmail.com",
-  "birthDate": "2008",
+  "jobTitle": "Software Developer and Technology Enthusiast",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Tamanrasset",
     "addressCountry": "DZ"
-  },
-  "knowsAbout": [
-    "Software Development",
-    "Cybersecurity",
-    "Electrical Engineering",
-    "Electronics",
-    "Robotics",
-    "Android Development"
-  ]
+  }
 }
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
 :root {
-  --bg: #071311;
-  --surface: #0c211d;
-  --surface2: #102a25;
-  --green: #47e0a0;
-  --blue: #42b9ff;
-  --white: #f4fff9;
-  --muted: #a4bbb1;
-  --border: rgba(125,220,180,.16);
-  --shadow: 0 15px 45px rgba(0,0,0,.22);
+  --bg: #10141e;
+  --bg2: #151c29;
+  --panel: #1b2433;
+  --panel2: #202c3d;
+  --gold: #e8bd70;
+  --gold2: #f5d99e;
+  --blue: #5db8ed;
+  --white: #f5f5f2;
+  --muted: #aeb8c8;
+  --line: rgba(255,255,255,.09);
+  --radius: 20px;
 }
 
 * {
@@ -97,460 +75,578 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(ellipse at 10% 0%, rgba(32,185,130,.13), transparent 35%),
-    radial-gradient(ellipse at 95% 20%, rgba(66,185,255,.10), transparent 32%),
-    var(--bg);
+  background: var(--bg);
   color: var(--white);
-  font-family: Tahoma, Arial, sans-serif;
-  line-height: 1.85;
+  font-family: "Cairo", Tahoma, sans-serif;
+  line-height: 1.9;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 button {
   font: inherit;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .container {
-  width: min(1120px, 91%);
+  width: min(1160px, 91%);
   margin: auto;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7,19,17,.94);
+  background: rgba(16,20,30,.94);
   backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
 }
 
 .navbar {
-  min-height: 76px;
+  min-height: 82px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  align-items: center;
+  gap: 20px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   direction: ltr;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 900;
-}
-
-.brand span {
-  color: var(--green);
+  letter-spacing: 1px;
 }
 
 .brand img {
-  width: 43px;
-  height: 43px;
-  border-radius: 13px;
-  object-fit: cover;
-  border: 1px solid var(--green);
+  width: 49px;
+  height: 49px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.brand span {
+  color: var(--gold);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 22px;
   color: var(--muted);
   font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  transition: .25s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--green);
+  color: var(--gold);
 }
 
 .menu-button {
   display: none;
-  background: var(--surface2);
-  border: 1px solid var(--border);
   color: var(--white);
-  border-radius: 10px;
-  padding: 8px 12px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 14px;
   cursor: pointer;
 }
 
 /* HERO */
 
 .hero {
-  min-height: 650px;
-  padding: 65px 0;
+  padding: 75px 0 85px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr .85fr;
   align-items: center;
-  gap: 40px;
+  gap: 55px;
+  min-height: 650px;
 }
 
-.status {
+.hero-content {
+  position: relative;
+}
+
+.eyebrow {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  padding: 6px 14px;
+  border: 1px solid rgba(232,189,112,.35);
+  color: var(--gold2);
+  background: rgba(232,189,112,.08);
+  padding: 7px 15px;
   border-radius: 30px;
-  border: 1px solid rgba(71,224,160,.25);
-  background: rgba(71,224,160,.08);
-  color: var(--green);
   font-size: 12px;
-  margin-bottom: 22px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
-.status-dot {
+.eyebrow i {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 12px var(--green);
+  background: #61d69c;
+  box-shadow: 0 0 12px #61d69c;
 }
 
 .hero h1 {
-  font-size: clamp(35px,5vw,57px);
-  line-height: 1.4;
-  margin-bottom: 15px;
+  font-size: clamp(37px,5vw,65px);
+  line-height: 1.35;
+  font-weight: 900;
+  margin-bottom: 12px;
 }
 
 .hero h1 span {
   display: block;
+  color: var(--gold);
   direction: ltr;
   text-align: right;
-  color: var(--green);
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  color: var(--blue);
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 15px;
 }
 
 .hero-description {
   color: var(--muted);
-  max-width: 570px;
+  max-width: 610px;
   font-size: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
-.hero-image-wrap {
-  padding: 10px;
-  border-radius: 28px;
-  background: linear-gradient(135deg,var(--green),var(--blue));
-  box-shadow: 0 20px 55px rgba(0,0,0,.4);
-  max-width: 470px;
-  justify-self: center;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  display: block;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.hero-buttons {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 13px;
 }
 
 .btn {
-  min-height: 47px;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  padding: 9px 20px;
+  align-items: center;
+  min-height: 49px;
+  padding: 10px 22px;
   border-radius: 12px;
   font-size: 13px;
-  font-weight: bold;
-  border: 1px solid var(--border);
+  font-weight: 800;
   transition: .25s;
-  cursor: pointer;
+  border: 1px solid var(--line);
 }
 
-.btn-green {
-  background: var(--green);
-  color: #052018;
-  border-color: var(--green);
+.btn-primary {
+  background: var(--gold);
+  color: #171b24;
+  border-color: var(--gold);
 }
 
-.btn-green:hover {
-  background: #82f5bd;
+.btn-primary:hover {
+  background: var(--gold2);
   transform: translateY(-3px);
 }
 
-.btn-outline:hover {
-  color: var(--green);
-  border-color: var(--green);
+.btn-secondary {
+  color: var(--white);
+  background: var(--panel);
+}
+
+.btn-secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
   transform: translateY(-3px);
+}
+
+/* LOGO FEATURE */
+
+.logo-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+  border-radius: 35px;
+  background:
+    radial-gradient(circle at center, rgba(232,189,112,.17), transparent 60%),
+    linear-gradient(145deg,#202d40,#111824);
+  border: 1px solid rgba(232,189,112,.23);
+  box-shadow: 0 25px 70px rgba(0,0,0,.35);
+  overflow: hidden;
+}
+
+.logo-stage::before,
+.logo-stage::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(93,184,237,.18);
+  border-radius: 50%;
+  width: 360px;
+  height: 360px;
+  pointer-events: none;
+}
+
+.logo-stage::after {
+  width: 290px;
+  height: 290px;
+  border-color: rgba(232,189,112,.18);
+}
+
+.main-logo {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.3));
+  border-radius: 50%;
+}
+
+.logo-caption {
+  position: relative;
+  z-index: 2;
+  color: var(--gold);
+  direction: ltr;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 13px;
+  text-align: center;
+}
+
+/* QUICK FACTS */
+
+.quick-facts {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 13px;
+  margin-top: 34px;
+}
+
+.quick-fact {
+  padding: 15px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.quick-fact strong {
+  display: block;
+  color: var(--gold);
+  font-size: 19px;
+}
+
+.quick-fact span {
+  color: var(--muted);
+  font-size: 11px;
 }
 
 /* SECTIONS */
 
-section {
-  padding: 75px 0;
+section.content-section {
+  padding: 85px 0;
 }
 
-.section-head {
-  margin-bottom: 30px;
+.section-heading {
+  margin-bottom: 35px;
 }
 
-.section-tag {
-  color: var(--green);
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
+.section-heading small {
+  color: var(--gold);
   direction: ltr;
   display: inline-block;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 11px;
 }
 
-.section-head h2 {
-  font-size: clamp(26px,4vw,35px);
-  margin-top: 5px;
+.section-heading h2 {
+  font-size: clamp(27px,4vw,38px);
+  line-height: 1.5;
+  margin-top: 6px;
 }
 
-.section-head p {
+.section-heading p {
   color: var(--muted);
   font-size: 14px;
-  margin-top: 5px;
   max-width: 650px;
 }
 
 .panel {
-  background: linear-gradient(145deg,var(--surface2),var(--surface));
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
+  background: linear-gradient(145deg,var(--panel),#171e2b);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
 }
 
-/* PROFILE */
+/* ABOUT */
 
-.profile {
-  padding: 30px;
+.about-panel {
+  padding: 32px;
 }
 
-.profile p {
+.about-panel p {
   color: var(--muted);
   font-size: 15px;
+  margin-bottom: 14px;
 }
 
-.profile strong {
-  color: var(--green);
+.about-panel strong {
+  color: var(--gold2);
 }
 
-.profile-facts {
+.details {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 12px;
-  margin-top: 25px;
+  gap: 13px;
+  margin-top: 28px;
 }
 
-.fact {
-  padding: 17px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.025);
+.detail {
+  padding: 15px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid var(--line);
   border-radius: 13px;
 }
 
-.fact small {
-  color: var(--muted);
+.detail small {
   display: block;
+  color: var(--blue);
   font-size: 11px;
 }
 
-.fact strong {
-  font-size: 14px;
+.detail strong {
+  font-size: 13px;
+  color: var(--white);
 }
 
-/* CARDS */
+/* SPECIALTY IMAGE CARDS */
 
-.grid {
+.specialty-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 22px;
+}
+
+.specialty-card {
+  overflow: hidden;
+  transition: .3s;
+}
+
+.specialty-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(232,189,112,.45);
+}
+
+.specialty-image {
+  height: 230px;
+  overflow: hidden;
+  background: #202b3b;
+}
+
+.specialty-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.specialty-card:hover .specialty-image img {
+  transform: scale(1.06);
+}
+
+.specialty-body {
+  padding: 22px;
+}
+
+.specialty-body small {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  direction: ltr;
+  display: inline-block;
+}
+
+.specialty-body h3 {
+  font-size: 20px;
+  margin: 5px 0 8px;
+}
+
+.specialty-body p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* PROJECTS */
+
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
   gap: 17px;
 }
 
-.card {
+.project {
   padding: 23px;
   transition: .25s;
 }
 
-.card:hover {
+.project:hover {
   transform: translateY(-5px);
-  border-color: rgba(71,224,160,.5);
+  border-color: var(--gold);
 }
 
-.card-icon {
-  width: 48px;
-  height: 48px;
+.project-icon {
+  width: 49px;
+  height: 49px;
   display: grid;
   place-items: center;
-  border-radius: 14px;
-  background: rgba(71,224,160,.1);
-  color: var(--green);
+  border-radius: 15px;
+  background: rgba(232,189,112,.12);
+  color: var(--gold);
   font-size: 23px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
-.card h3 {
+.project h3 {
   font-size: 17px;
   margin-bottom: 8px;
 }
 
-.card p {
+.project p {
   color: var(--muted);
   font-size: 13px;
 }
 
-.card-label {
+.project-label {
   display: inline-block;
   margin-top: 15px;
-  padding: 3px 10px;
-  color: var(--green);
-  background: rgba(71,224,160,.08);
+  padding: 4px 10px;
   border-radius: 20px;
-  font-size: 11px;
-}
-
-/* SKILLS */
-
-.skill-list {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 14px;
-}
-
-.skill {
-  padding: 19px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-}
-
-.skill-symbol {
-  width: 42px;
-  height: 42px;
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
+  background: rgba(93,184,237,.1);
   color: var(--blue);
-  background: rgba(66,185,255,.1);
-  font-size: 19px;
-}
-
-.skill h3 {
-  font-size: 14px;
-}
-
-.skill p {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-/* SERVICES */
-
-.service-note {
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 20px;
+  font-size: 10px;
 }
 
 /* VISION */
 
-.vision {
-  padding: 30px;
-  border-right: 3px solid var(--green);
+.vision-panel {
+  padding: 32px;
+  border-right: 4px solid var(--gold);
+  background:
+    radial-gradient(circle at 10% 20%,rgba(93,184,237,.09),transparent 35%),
+    var(--panel);
 }
 
-.vision p {
+.vision-panel p {
   color: var(--muted);
   font-size: 15px;
 }
 
-.vision strong {
-  color: var(--green);
+.vision-panel strong {
+  color: var(--gold2);
+}
+
+/* SERVICES */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 17px;
 }
 
 /* CONTACT */
 
-.contact {
-  padding: 30px;
+.contact-panel {
+  padding: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
-.contact p {
+.contact-panel p {
   color: var(--muted);
   font-size: 13px;
 }
 
-.email {
-  display: inline-block;
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.contact-link {
+  color: var(--gold2);
   direction: ltr;
-  unicode-bidi: isolate;
-  color: var(--green);
-  margin-top: 9px;
+  display: inline-block;
+  font-size: 14px;
   overflow-wrap: anywhere;
 }
 
-.contact-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.contact-link:hover {
+  color: var(--blue);
 }
 
 footer {
-  padding: 27px 0;
-  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: 30px 0;
   color: var(--muted);
+  text-align: center;
   font-size: 12px;
-  border-top: 1px solid var(--border);
 }
 
 footer strong {
-  color: var(--green);
+  color: var(--gold);
   direction: ltr;
   display: inline-block;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 
-@media(max-width:850px) {
+@media(max-width:900px) {
   .hero {
     grid-template-columns: 1fr;
-    min-height: auto;
-    padding-top: 50px;
-    gap: 30px;
+    gap: 35px;
   }
 
-  .hero-image-wrap {
-    max-width: 390px;
+  .logo-stage {
+    max-width: 520px;
+    width: 100%;
+    margin: auto;
   }
 
-  .grid {
-    grid-template-columns: repeat(2,minmax(0,1fr));
+  .project-grid,
+  .services-grid {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
-@media(max-width:650px) {
-  .menu-button {
-    display: block;
+@media(max-width:680px) {
+  .navbar {
+    min-height: 72px;
+    flex-wrap: wrap;
   }
 
-  .navbar {
-    min-height: 70px;
-    flex-wrap: wrap;
+  .menu-button {
+    display: block;
   }
 
   .nav-links {
@@ -559,7 +655,7 @@ footer strong {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 8px 0;
+    padding-bottom: 12px;
   }
 
   .nav-links.open {
@@ -567,28 +663,42 @@ footer strong {
   }
 
   .nav-links a {
-    padding: 10px;
-    border-bottom: 1px solid var(--border);
+    padding: 9px 5px;
+    border-bottom: 1px solid var(--line);
   }
 
-  .grid,
-  .skill-list,
-  .profile-facts {
-    grid-template-columns: 1fr;
-  }
-
-  section {
-    padding: 52px 0;
+  .hero {
+    padding-top: 50px;
   }
 
   .hero h1 {
-    font-size: 39px;
+    font-size: 40px;
   }
 
-  .profile,
-  .contact,
-  .vision {
+  .quick-facts,
+  .details,
+  .specialty-grid,
+  .project-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section.content-section {
+    padding: 58px 0;
+  }
+
+  .specialty-image {
+    height: 205px;
+  }
+
+  .about-panel,
+  .vision-panel,
+  .contact-panel {
     padding: 22px;
+  }
+
+  .logo-stage {
+    padding: 15px;
   }
 }
 
@@ -604,21 +714,20 @@ footer strong {
 <header>
   <div class="container navbar">
 
-    <a href="#home" class="brand">
+    <a class="brand" href="#home">
       <img src="rue-mouri-logo.png" alt="شعار RUE Mouri">
       <div>RUE <span>Mouri</span></div>
     </a>
 
-    <button class="menu-button" id="menuButton"
-      aria-label="فتح القائمة" aria-expanded="false">
+    <button class="menu-button" id="menuButton" aria-expanded="false">
       ☰ القائمة
     </button>
 
     <nav class="nav-links" id="navLinks">
       <a href="#home">الرئيسية</a>
-      <a href="#about">الملف الشخصي</a>
+      <a href="#about">من أنا</a>
+      <a href="#specialties">التخصصات</a>
       <a href="#projects">المشاريع</a>
-      <a href="#skills">التخصصات</a>
       <a href="#services">الخدمات</a>
       <a href="#vision">الرؤية</a>
       <a href="#contact">التواصل</a>
@@ -629,113 +738,222 @@ footer strong {
 
 <main>
 
-<!-- HOME -->
+<!-- HERO -->
 
 <section class="container hero" id="home">
 
-  <div>
-    <div class="status">
-      <span class="status-dot"></span>
-      مطور تقني ومهتم بالابتكار
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      <i></i>
+      مطور تقني من الجزائر 🇩🇿
     </div>
 
     <h1>
-      مرحبًا بك في عالمي
+      أصنع الأفكار
       <span>RUE Mouri</span>
     </h1>
 
+    <div class="hero-subtitle">
+      البرمجة · الهندسة · الابتكار
+    </div>
+
     <p class="hero-description">
-      أنا موري محمد، مطور برمجيات ومهتم بالهندسة التقنية.
-      أعمل على استكشاف وبناء الحلول الرقمية والأنظمة الإلكترونية،
-      وأجمع بين التفكير البرمجي والتحليل الهندسي لصناعة أفكار
-      عملية تسهم في تطوير التكنولوجيا.
+      أنا موري محمد، مطور برمجيات ومهتم بالهندسة الكهربائية
+      والتكنولوجيا الحديثة. أعمل على تصميم وتطوير التطبيقات
+      والبرامج والمواقع الإلكترونية، واستكشاف الأنظمة الذكية
+      والحلول التقنية التي تجمع بين عالم البرمجيات والإلكترونيات.
     </p>
 
-    <div class="hero-buttons">
-      <a class="btn btn-green" href="#projects">استكشف أعمالي</a>
-      <a class="btn btn-outline" href="#contact">تواصل معي</a>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">اكتشف أعمالي ←</a>
+      <a href="#contact" class="btn btn-secondary">تواصل معي</a>
     </div>
+
+    <div class="quick-facts">
+      <div class="quick-fact">
+        <strong>01</strong>
+        <span>البرمجة والتطوير</span>
+      </div>
+      <div class="quick-fact">
+        <strong>02</strong>
+        <span>الهندسة الكهربائية</span>
+      </div>
+      <div class="quick-fact">
+        <strong>03</strong>
+        <span>الابتكار التقني</span>
+      </div>
+    </div>
+
   </div>
 
-  <div class="hero-image-wrap">
-    <img
-      class="hero-image"
-      src="rue-mouri-logo.png"
-      alt="RUE Mouri - موري محمد، مطور البرمجيات والأمن السيبراني من الجزائر"
-      width="1024"
-      height="1024"
-      fetchpriority="high">
+  <div class="logo-stage">
+    <img class="main-logo"
+         src="rue-mouri-logo.png"
+         alt="الشعار الرسمي للمطور التقني موري محمد RUE Mouri">
+    <div class="logo-caption">MOHAMED MOURI · ALGERIA</div>
   </div>
 
 </section>
 
 <!-- ABOUT -->
 
-<section id="about">
+<section class="content-section" id="about">
   <div class="container">
 
-    <div class="section-head">
-      <span class="section-tag">01 / PROFILE</span>
-      <h2>الملف الشخصي</h2>
-      <p>التعريف بمسيرتي واهتماماتي التقنية.</p>
+    <div class="section-heading">
+      <small>01 — ABOUT ME</small>
+      <h2>من أنا؟</h2>
+      <p>تعرف على خلفيتي واهتماماتي ومساري العلمي والتقني.</p>
     </div>
 
-    <div class="panel profile">
+    <div class="panel about-panel">
 
       <p>
         أنا <strong>موري محمد (Mohamed Mouri)</strong>،
-        مطور برمجيات ومهتم بالتكنولوجيا والهندسة والابتكار الرقمي.
-        أعمل على تطوير أفكار وبرامج وحلول تقنية تجمع بين البرمجيات
-        والأنظمة الإلكترونية، وأسعى إلى توسيع معرفتي باستمرار
-        ومواكبة التطورات في عالم التكنولوجيا.
+        مطور برمجيات ومهتم بالتكنولوجيا والهندسة والابتكار.
+        أؤمن بأن المطور الحقيقي لا يكتفي باستخدام الأدوات،
+        بل يسعى إلى فهمها وتطويرها وتحويل الأفكار إلى منتجات
+        وحلول رقمية مفيدة.
       </p>
-
-      <br>
 
       <p>
-        لدي اهتمام عملي بتصميم وتطوير التطبيقات والبرامج والمواقع
-        الإلكترونية، إلى جانب استكشاف الأمن السيبراني ومبادئ
-        حماية الأنظمة والمعلومات. كما أدرس الهندسة الكهربائية،
-        وهو المجال الذي أطمح من خلاله إلى الجمع بين الجانب النظري
-        والتطبيق العملي وصناعة حلول ذكية.
+        عملت على إنشاء وبرمجة مجموعة من التطبيقات والبرامج
+        والمواقع الإلكترونية، وأهتم بتطوير واجهات الاستخدام
+        وبناء الحلول البرمجية، إلى جانب التعلم المستمر في
+        الأمن السيبراني ومبادئ حماية الأنظمة والمعلومات.
       </p>
 
-      <div class="profile-facts">
-        <div class="fact">
+      <p>
+        أدرس حاليًا في مجال <strong>الهندسة الكهربائية</strong>،
+        وهو تخصص أطمح من خلاله إلى الجمع بين البرمجة
+        والإلكترونيات والأنظمة المادية لصناعة مشاريع
+        تقنية متكاملة.
+      </p>
+
+      <div class="details">
+        <div class="detail">
           <small>الاسم</small>
           <strong>موري محمد</strong>
         </div>
-
-        <div class="fact">
+        <div class="detail">
           <small>الاسم بالإنجليزية</small>
           <strong>Mohamed Mouri</strong>
         </div>
-
-        <div class="fact">
+        <div class="detail">
           <small>سنة الميلاد</small>
           <strong>2008</strong>
         </div>
-
-        <div class="fact">
-          <small>الموقع</small>
-          <strong>تمنراست، الجزائر 🇩🇿</strong>
+        <div class="detail">
+          <small>مكان الميلاد</small>
+          <strong>أدرار، الجزائر</strong>
         </div>
-
-        <div class="fact">
+        <div class="detail">
+          <small>الإقامة</small>
+          <strong>تمنراست، الجزائر</strong>
+        </div>
+        <div class="detail">
           <small>المجال الدراسي</small>
           <strong>الهندسة الكهربائية</strong>
         </div>
-
-        <div class="fact">
-          <small>اللغة الأساسية</small>
-          <strong>العربية</strong>
+        <div class="detail">
+          <small>اللغة</small>
+          <strong>العربية والإنجليزية</strong>
         </div>
-
-        <div class="fact">
-          <small>لغة إضافية</small>
-          <strong>الإنجليزية - قيد التطوير</strong>
+        <div class="detail">
+          <small>الاهتمام الأساسي</small>
+          <strong>البرمجة والتكنولوجيا</strong>
+        </div>
+        <div class="detail">
+          <small>الهوية التقنية</small>
+          <strong>RUE Mouri</strong>
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALTIES -->
+
+<section class="content-section" id="specialties">
+  <div class="container">
+
+    <div class="section-heading">
+      <small>02 — SPECIALTIES</small>
+      <h2>مجالات اهتمامي</h2>
+      <p>مجالات تقنية تجمع بين البرمجيات والهندسة والأنظمة الذكية.</p>
+    </div>
+
+    <div class="specialty-grid">
+
+      <article class="panel specialty-card">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=85"
+               alt="شاشة حاسوب تعرض شيفرات برمجية"
+               loading="lazy">
+        </div>
+        <div class="specialty-body">
+          <small>SOFTWARE DEVELOPMENT</small>
+          <h3>البرمجة وتطوير البرمجيات</h3>
+          <p>
+            تصميم وبرمجة التطبيقات والبرامج والمواقع الإلكترونية،
+            وبناء حلول رقمية تهدف إلى تسهيل المهام وتحويل الأفكار
+            إلى منتجات عملية.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel specialty-card">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+               alt="لوحة إلكترونية ومكونات دقيقة"
+               loading="lazy">
+        </div>
+        <div class="specialty-body">
+          <small>ELECTRICAL ENGINEERING</small>
+          <h3>الهندسة الكهربائية والإلكترونيات</h3>
+          <p>
+            دراسة الدوائر والمكونات الكهربائية والإلكترونية،
+            وتحليل الأنظمة وفهم كيفية عملها وربط الجانب النظري
+            بالتطبيقات العملية.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel specialty-card">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1000&q=85"
+               alt="روبوت وتقنيات ذكية"
+               loading="lazy">
+        </div>
+        <div class="specialty-body">
+          <small>ROBOTICS & SMART SYSTEMS</small>
+          <h3>الروبوتات والأنظمة الذكية</h3>
+          <p>
+            استكشاف المتحكمات والأنظمة المدمجة والروبوتات،
+            وربط البرمجيات بالمستشعرات والمكونات الإلكترونية
+            لبناء تطبيقات ذكية.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel specialty-card">
+        <div class="specialty-image">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=85"
+               alt="مفهوم الحماية والأمن الرقمي"
+               loading="lazy">
+        </div>
+        <div class="specialty-body">
+          <small>CYBERSECURITY</small>
+          <h3>الأمن السيبراني</h3>
+          <p>
+            الاهتمام بحماية الأنظمة والمعلومات وفهم مبادئ
+            الأمن الرقمي، والتعلم والتطبيق ضمن بيئات
+            مصرح بها وقانونية.
+          </p>
+        </div>
+      </article>
 
     </div>
   </div>
@@ -743,141 +961,76 @@ footer strong {
 
 <!-- PROJECTS -->
 
-<section id="projects">
+<section class="content-section" id="projects">
   <div class="container">
 
-    <div class="section-head">
-      <span class="section-tag">02 / PROJECTS</span>
-      <h2>المشاريع والأعمال التقنية</h2>
-      <p>أفكار ومجالات أعمل على تطويرها واستكشاف إمكاناتها.</p>
+    <div class="section-heading">
+      <small>03 — PROJECTS</small>
+      <h2>المشاريع والأعمال</h2>
+      <p>أفكار ومشاريع تقنية أعمل على تطويرها واستكشافها.</p>
     </div>
 
-    <div class="grid">
+    <div class="project-grid">
 
-      <article class="panel card">
-        <div class="card-icon">⌘</div>
-        <h3>تطوير البرمجيات</h3>
+      <article class="panel project">
+        <div class="project-icon">⌘</div>
+        <h3>تطوير التطبيقات</h3>
         <p>
-          تصميم وبرمجة التطبيقات والبرامج والمواقع الإلكترونية،
-          والعمل على بناء حلول رقمية تلبي احتياجات مختلفة.
+          إنشاء تطبيقات وبرامج رقمية، وتجربة أفكار جديدة
+          وتطوير واجهات استخدام عملية.
         </p>
-        <span class="card-label">Software Development</span>
+        <span class="project-label">APPLICATIONS</span>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">⌁</div>
+      <article class="panel project">
+        <div class="project-icon">◈</div>
         <h3>Rubble Mouri</h3>
         <p>
-          مشروع تقني يهتم بتطوير أنظمة إلكترونية للحماية من السرقة
-          والإنذار والتتبع، ويهدف إلى استكشاف حلول ذكية للأمان.
+          مشروع تقني يهتم بأنظمة الحماية من السرقة والإنذار
+          والتتبع، ويهدف إلى تطوير حلول إلكترونية ذكية.
         </p>
-        <span class="card-label">مشروع قيد التطوير</span>
+        <span class="project-label">PROJECT IN DEVELOPMENT</span>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">⚙</div>
-        <h3>الأنظمة الذكية</h3>
+      <article class="panel project">
+        <div class="project-icon">▣</div>
+        <h3>المواقع الإلكترونية</h3>
         <p>
-          استكشاف الأنظمة المدمجة والمتحكمات الإلكترونية
-          والربط بين البرمجيات والمكونات المادية.
+          تصميم صفحات ومواقع إلكترونية وتنظيم المحتوى
+          وتحسين تجربة المستخدم.
         </p>
-        <span class="card-label">Smart Systems</span>
+        <span class="project-label">WEB DEVELOPMENT</span>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">▣</div>
-        <h3>تطبيقات أندرويد</h3>
+      <article class="panel project">
+        <div class="project-icon">⚙</div>
+        <h3>التجارب الإلكترونية</h3>
         <p>
-          تصميم واجهات وتجربة استخدام التطبيقات،
-          واستكشاف تطوير حلول عملية للهواتف الذكية.
+          استكشاف الدوائر والمتحكمات والمكونات الإلكترونية
+          وتطبيق المفاهيم الهندسية.
         </p>
-        <span class="card-label">Android Development</span>
+        <span class="project-label">ELECTRONICS</span>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">⌬</div>
-        <h3>الأمن السيبراني</h3>
+      <article class="panel project">
+        <div class="project-icon">⌬</div>
+        <h3>التعلم الأمني</h3>
         <p>
-          التعلم والتطبيق في مجال حماية الأنظمة والمعلومات
-          وفهم مبادئ الأمن الرقمي والاختبار المصرح به.
+          دراسة مفاهيم الأمن السيبراني وممارسات حماية
+          الأنظمة والتوعية بالأمن الرقمي.
         </p>
-        <span class="card-label">Cybersecurity</span>
+        <span class="project-label">CYBERSECURITY</span>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">⚡</div>
-        <h3>الهندسة الكهربائية</h3>
+      <article class="panel project">
+        <div class="project-icon">✦</div>
+        <h3>أفكار وابتكارات</h3>
         <p>
-          دراسة الدوائر والمكونات الكهربائية والإلكترونية
-          وفهم الأنظمة وتحليلها وتطوير التطبيقات العملية.
+          البحث عن مشكلات واقعية وتحويلها إلى أفكار
+          ومشاريع تقنية قابلة للتطوير.
         </p>
-        <span class="card-label">Electrical Engineering</span>
+        <span class="project-label">INNOVATION</span>
       </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-
-<section id="skills">
-  <div class="container">
-
-    <div class="section-head">
-      <span class="section-tag">03 / EXPERTISE</span>
-      <h2>التخصصات والاهتمامات</h2>
-      <p>مجالات معرفية وتقنية أعمل على تطوير مستواي فيها.</p>
-    </div>
-
-    <div class="skill-list">
-
-      <div class="skill">
-        <div class="skill-symbol">⌘</div>
-        <div>
-          <h3>البرمجة وتطوير التطبيقات</h3>
-          <p>برمجيات الويب والهواتف والحلول الرقمية.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-symbol">⌬</div>
-        <div>
-          <h3>الأمن السيبراني</h3>
-          <p>مبادئ حماية المعلومات والأنظمة.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-symbol">⚡</div>
-        <div>
-          <h3>الهندسة الكهربائية</h3>
-          <p>الدوائر الكهربائية والتحليل الهندسي.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-symbol">⚙</div>
-        <div>
-          <h3>الإلكترونيات والروبوتات</h3>
-          <p>المتحكمات والأنظمة المدمجة والتجارب.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-symbol">▤</div>
-        <div>
-          <h3>الإعلام الآلي</h3>
-          <p>البرامج والحلول الرقمية واستخدام الحاسوب.</p>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-symbol">✦</div>
-        <div>
-          <h3>التصميم الرقمي</h3>
-          <p>واجهات المستخدم والمفاهيم البصرية.</p>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -885,28 +1038,28 @@ footer strong {
 
 <!-- SERVICES -->
 
-<section id="services">
+<section class="content-section" id="services">
   <div class="container">
 
-    <div class="section-head">
-      <span class="section-tag">04 / SERVICES</span>
+    <div class="section-heading">
+      <small>04 — SERVICES</small>
       <h2>الخدمات والأعمال</h2>
-      <p>مجالات الخدمات الرقمية التي يمكن الاستفسار عنها والاتفاق بشأنها.</p>
+      <p>للاستفسار عن الخدمات الرقمية وإمكانية تنفيذ الأعمال بالاتفاق المسبق.</p>
     </div>
 
-    <div class="grid">
+    <div class="services-grid">
 
-      <article class="panel card">
-        <div class="card-icon">▧</div>
+      <article class="panel project">
+        <div class="project-icon">▧</div>
         <h3>تصميم الإعلانات</h3>
         <p>
           إعداد تصاميم إعلانية رقمية ومنشورات بصرية
-          حسب متطلبات العمل والاتفاق المسبق.
+          حسب طبيعة النشاط والاحتياجات.
         </p>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">▤</div>
+      <article class="panel project">
+        <div class="project-icon">▤</div>
         <h3>خدمات الإعلام الآلي</h3>
         <p>
           المساعدة في بعض الأعمال الرقمية والمكتبية
@@ -914,49 +1067,46 @@ footer strong {
         </p>
       </article>
 
-      <article class="panel card">
-        <div class="card-icon">⌘</div>
-        <h3>أعمال برمجية بسيطة</h3>
+      <article class="panel project">
+        <div class="project-icon">⌘</div>
+        <h3>أعمال الويب والبرمجة</h3>
         <p>
-          المساهمة في إعداد صفحات ومشاريع رقمية
-          وأفكار برمجية وفق الإمكانات والاتفاق.
+          إعداد صفحات ومواقع ومشاريع برمجية بسيطة
+          وفق نطاق العمل والاتفاق المسبق.
         </p>
       </article>
 
     </div>
-
-    <p class="service-note">
-      يتم تحديد تفاصيل كل عمل ونطاقه وموعده وشروطه بالتفاهم المسبق.
-    </p>
-
   </div>
 </section>
 
 <!-- VISION -->
 
-<section id="vision">
+<section class="content-section" id="vision">
   <div class="container">
 
-    <div class="section-head">
-      <span class="section-tag">05 / VISION</span>
+    <div class="section-heading">
+      <small>05 — MY VISION</small>
       <h2>رؤيتي وطموحي</h2>
     </div>
 
-    <div class="panel vision">
+    <div class="panel vision-panel">
       <p>
-        أطمح إلى أن أكون جزءًا من الجيل الذي يساهم في بناء مستقبل
-        تكنولوجي أقوى للجزائر 🇩🇿، من خلال العلم والبحث والابتكار
-        وتطوير حلول تقنية محلية قادرة على المنافسة والتأثير.
-        هدفي ليس مجرد تعلم التكنولوجيا أو استخدامها،
-        بل المشاركة في صناعتها وتطويرها، وترك أثر إيجابي
-        يرفع من قيمة بلدي ويساهم في تقدمه.
+        أطمح إلى أن أكون جزءًا من جيل جزائري يصنع التكنولوجيا
+        ولا يكتفي باستهلاكها؛ جيل يوظف العلم والبحث والابتكار
+        لبناء حلول محلية قادرة على التطور والمنافسة.
       </p>
-
       <br>
-
       <p>
-        أؤمن أن المعرفة والعمل المستمر هما أساس الإنجاز،
-        وأن الأفكار الكبيرة تبدأ بخطوات صغيرة وإرادة لا تتوقف عن التعلم.
+        أريد أن أساهم بعملي ومعرفتي في
+        <strong>رفع قيمة الجزائر 🇩🇿</strong>،
+        وأن أكون من أبنائها الذين يشاركون في نهضتها العلمية
+        والتكنولوجية، ويتركون أثرًا إيجابيًا في مستقبلها.
+      </p>
+      <br>
+      <p>
+        أؤمن بأن الطريق إلى الإنجاز يبدأ بالتعلم المستمر،
+        والانضباط، والتجربة، وتحويل المعرفة إلى عمل نافع.
       </p>
     </div>
 
@@ -965,38 +1115,47 @@ footer strong {
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section class="content-section" id="contact">
   <div class="container">
 
-    <div class="section-head">
-      <span class="section-tag">06 / CONTACT</span>
-      <h2>التواصل والاستفسارات</h2>
-      <p>للاستفسار حول الأعمال والخدمات والمشاريع التقنية.</p>
+    <div class="section-heading">
+      <small>06 — CONTACT</small>
+      <h2>لنتواصل ونبدأ العمل</h2>
+      <p>للاستفسارات المهنية وعرض تفاصيل الخدمات والأعمال.</p>
     </div>
 
-    <div class="panel contact">
+    <div class="panel contact-panel">
 
       <div>
         <h3>RUE Mouri — Mohamed Mouri</h3>
         <p>
-          للتواصل المهني وعرض تفاصيل العمل المطلوب،
-          يمكن مراسلتي عبر البريد الإلكتروني.
+          يسعدني استقبال استفساراتكم حول الخدمات الرقمية
+          والأعمال والمشاريع التقنية.
         </p>
 
-        <a class="email" href="mailto:mourimohamed1150@gmail.com">
-          mourimohamed1150@gmail.com
-        </a>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:mourimohamed1150@gmail.com">
+            ✉ mourimohamed1150@gmail.com
+          </a>
+
+          <a class="contact-link" href="tel:+213657066387">
+            ☎ 0657066387
+          </a>
+        </div>
       </div>
 
-      <div class="contact-actions">
-        <a class="btn btn-green"
-           href="mailto:mourimohamed1150@gmail.com?subject=استفسار%20حول%20RUE%20Mouri">
-          إرسال رسالة
+      <div class="hero-actions">
+        <a class="btn btn-primary"
+           href="mailto:mourimohamed1150@gmail.com?subject=استفسار%20حول%20خدمات%20RUE%20Mouri">
+          أرسل بريداً إلكترونياً
+        </a>
+
+        <a class="btn btn-secondary" href="tel:+213657066387">
+          اتصال هاتفي
         </a>
       </div>
 
     </div>
-
   </div>
 </section>
 
@@ -1006,52 +1165,48 @@ footer strong {
   <div class="container">
     © <span id="year">2026</span>
     <strong>RUE Mouri</strong>
-    — تم التصميم والتطوير بشغف تقني 🇩🇿
+    — Mohamed Mouri · صنع بشغف في الجزائر 🇩🇿
   </div>
 </footer>
 
 <script>
-  // تحديث السنة تلقائياً
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+const year = document.getElementById("year");
+year.textContent = new Date().getFullYear();
 
-  // قائمة الهاتف
-  const menuButton = document.getElementById("menuButton");
-  const navLinks = document.getElementById("navLinks");
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
 
-  menuButton.addEventListener("click", function() {
-    const opened = navLinks.classList.toggle("open");
-    menuButton.setAttribute("aria-expanded", opened);
+menuButton.addEventListener("click", function() {
+  const isOpen = navLinks.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+  link.addEventListener("click", function() {
+    navLinks.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  });
+});
+
+const sections = document.querySelectorAll("main section[id]");
+const links = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", function() {
+  let current = "";
+
+  sections.forEach(function(section) {
+    if (window.scrollY >= section.offsetTop - 150) {
+      current = section.id;
+    }
   });
 
-  // إغلاق القائمة بعد اختيار قسم
-  document.querySelectorAll(".nav-links a").forEach(function(link) {
-    link.addEventListener("click", function() {
-      navLinks.classList.remove("open");
-      menuButton.setAttribute("aria-expanded", "false");
-    });
+  links.forEach(function(link) {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === "#" + current
+    );
   });
-
-  // تمييز القسم الحالي في القائمة
-  const sections = document.querySelectorAll("main section[id]");
-  const links = document.querySelectorAll(".nav-links a");
-
-  window.addEventListener("scroll", function() {
-    let current = "";
-
-    sections.forEach(function(section) {
-      if (window.scrollY >= section.offsetTop - 140) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    links.forEach(function(link) {
-      link.classList.toggle(
-        "active",
-        link.getAttribute("href") === "#" + current
-      );
-    });
-  });
+});
 </script>
 
 </body>
