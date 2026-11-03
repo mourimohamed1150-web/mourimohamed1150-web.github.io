@@ -11,7 +11,9 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#10141e">
 <link rel="canonical" href="https://mourimohamed1150-web.github.io/">
-<link rel="icon" type="image/png" href="rue-mouri-logo.png">
+
+<!-- الصور الرسمية -->
+<link rel="icon" type="image/png" href="file_0000000087e4821199540cdb26185fb0.png">
 
 <!-- Google Search Console Verification -->
 <meta name="google-site-verification" content="EpCVwbIhSkopYsneCpMnbJ5PO1QS0BwWCBZQtDpP2Kg">
@@ -22,12 +24,12 @@
 <meta property="og:description" content="البرمجة والهندسة والابتكار التقني من الجزائر.">
 <meta property="og:url" content="https://mourimohamed1150-web.github.io/">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://mourimohamed1150-web.github.io/rue-mouri-logo.png">
+<meta property="og:image" content="https://mourimohamed1150-web.github.io/file_0000000087e4821199540cdb26185fb0.png">
 <meta property="og:locale" content="ar_DZ">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="RUE Mouri | Mohamed Mouri">
-<meta name="twitter:image" content="https://mourimohamed1150-web.github.io/rue-mouri-logo.png">
+<meta name="twitter:image" content="https://mourimohamed1150-web.github.io/file_0000000087e4821199540cdb26185fb0.png">
 
 <script type="application/ld+json">
 {
@@ -36,7 +38,7 @@
   "name": "Mohamed Mouri",
   "alternateName": ["موري محمد", "RUE Mouri"],
   "url": "https://mourimohamed1150-web.github.io/",
-  "image": "https://mourimohamed1150-web.github.io/rue-mouri-logo.png",
+  "image": "https://mourimohamed1150-web.github.io/file_0000000087e4821199540cdb26185fb0.png",
   "jobTitle": "Software Developer and Technology Enthusiast",
   "address": {
     "@type": "PostalAddress",
@@ -136,6 +138,7 @@ header {
   height: 49px;
   object-fit: contain;
   border-radius: 14px;
+  background: #fff;
 }
 
 .brand span {
@@ -319,6 +322,7 @@ header {
   z-index: 2;
   filter: drop-shadow(0 12px 24px rgba(0,0,0,.3));
   border-radius: 50%;
+  background: #fff;
 }
 
 .logo-caption {
@@ -398,6 +402,41 @@ section.content-section {
 }
 
 /* ABOUT */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.profile-card {
+  padding: 14px;
+  text-align: center;
+  position: sticky;
+  top: 105px;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 15px;
+  border: 2px solid rgba(232,189,112,.45);
+}
+
+.profile-name {
+  color: var(--gold2);
+  font-size: 17px;
+  font-weight: 900;
+  margin-top: 12px;
+}
+
+.profile-caption {
+  color: var(--muted);
+  font-size: 11px;
+}
 
 .about-panel {
   padding: 32px;
@@ -635,6 +674,10 @@ footer strong {
     margin: auto;
   }
 
+  .about-layout {
+    grid-template-columns: 210px 1fr;
+  }
+
   .project-grid,
   .services-grid {
     grid-template-columns: repeat(2,1fr);
@@ -677,6 +720,20 @@ footer strong {
     font-size: 40px;
   }
 
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    position: static;
+    width: min(260px, 100%);
+    margin: auto;
+  }
+
+  .profile-photo {
+    aspect-ratio: 4 / 5;
+  }
+
   .quick-facts,
   .details,
   .specialty-grid,
@@ -717,7 +774,7 @@ footer strong {
   <div class="container navbar">
 
     <a class="brand" href="#home">
-      <img src="rue-mouri-logo.png" alt="شعار RUE Mouri">
+      <img src="file_0000000087e4821199540cdb26185fb0.png" alt="شعار RUE Mouri">
       <div>RUE <span>Mouri</span></div>
     </a>
 
@@ -791,7 +848,7 @@ footer strong {
 
   <div class="logo-stage">
     <img class="main-logo"
-         src="rue-mouri-logo.png"
+         src="file_0000000087e4821199540cdb26185fb0.png"
          alt="الشعار الرسمي للمطور التقني موري محمد RUE Mouri">
     <div class="logo-caption">MOHAMED MOURI · ALGERIA</div>
   </div>
@@ -809,70 +866,84 @@ footer strong {
       <p>تعرف على خلفيتي واهتماماتي ومساري العلمي والتقني.</p>
     </div>
 
-    <div class="panel about-panel">
+    <div class="about-layout">
 
-      <p>
-        أنا <strong>موري محمد (Mohamed Mouri)</strong>،
-        مطور برمجيات ومهتم بالتكنولوجيا والهندسة والابتكار.
-        أؤمن بأن المطور الحقيقي لا يكتفي باستخدام الأدوات،
-        بل يسعى إلى فهمها وتطويرها وتحويل الأفكار إلى منتجات
-        وحلول رقمية مفيدة.
-      </p>
+      <aside class="panel profile-card">
+        <img
+          class="profile-photo"
+          src="file_00000000871881f49118434b28a2dc4e.png"
+          alt="الصورة الشخصية لموري محمد"
+          loading="lazy">
+        <div class="profile-name">Mohamed Mouri</div>
+        <div class="profile-caption">مطور تقني · RUE Mouri</div>
+      </aside>
 
-      <p>
-        عملت على إنشاء وبرمجة مجموعة من التطبيقات والبرامج
-        والمواقع الإلكترونية، وأهتم بتطوير واجهات الاستخدام
-        وبناء الحلول البرمجية، إلى جانب التعلم المستمر في
-        الأمن السيبراني ومبادئ حماية الأنظمة والمعلومات.
-      </p>
+      <div class="panel about-panel">
 
-      <p>
-        أدرس حاليًا في مجال <strong>الهندسة الكهربائية</strong>،
-        وهو تخصص أطمح من خلاله إلى الجمع بين البرمجة
-        والإلكترونيات والأنظمة المادية لصناعة مشاريع
-        تقنية متكاملة.
-      </p>
+        <p>
+          أنا <strong>موري محمد (Mohamed Mouri)</strong>،
+          مطور برمجيات ومهتم بالتكنولوجيا والهندسة والابتكار.
+          أؤمن بأن المطور الحقيقي لا يكتفي باستخدام الأدوات،
+          بل يسعى إلى فهمها وتطويرها وتحويل الأفكار إلى منتجات
+          وحلول رقمية مفيدة.
+        </p>
 
-      <div class="details">
-        <div class="detail">
-          <small>الاسم</small>
-          <strong>موري محمد</strong>
+        <p>
+          عملت على إنشاء وبرمجة مجموعة من التطبيقات والبرامج
+          والمواقع الإلكترونية، وأهتم بتطوير واجهات الاستخدام
+          وبناء الحلول البرمجية، إلى جانب التعلم المستمر في
+          الأمن السيبراني ومبادئ حماية الأنظمة والمعلومات.
+        </p>
+
+        <p>
+          أدرس حاليًا في مجال <strong>الهندسة الكهربائية</strong>،
+          وهو تخصص أطمح من خلاله إلى الجمع بين البرمجة
+          والإلكترونيات والأنظمة المادية لصناعة مشاريع
+          تقنية متكاملة.
+        </p>
+
+        <div class="details">
+          <div class="detail">
+            <small>الاسم</small>
+            <strong>موري محمد</strong>
+          </div>
+          <div class="detail">
+            <small>الاسم بالإنجليزية</small>
+            <strong>Mohamed Mouri</strong>
+          </div>
+          <div class="detail">
+            <small>سنة الميلاد</small>
+            <strong>2008</strong>
+          </div>
+          <div class="detail">
+            <small>مكان الميلاد</small>
+            <strong>أدرار، الجزائر</strong>
+          </div>
+          <div class="detail">
+            <small>الإقامة</small>
+            <strong>تمنراست، الجزائر</strong>
+          </div>
+          <div class="detail">
+            <small>المجال الدراسي</small>
+            <strong>الهندسة الكهربائية</strong>
+          </div>
+          <div class="detail">
+            <small>اللغة</small>
+            <strong>العربية والإنجليزية</strong>
+          </div>
+          <div class="detail">
+            <small>الاهتمام الأساسي</small>
+            <strong>البرمجة والتكنولوجيا</strong>
+          </div>
+          <div class="detail">
+            <small>الهوية التقنية</small>
+            <strong>RUE Mouri</strong>
+          </div>
         </div>
-        <div class="detail">
-          <small>الاسم بالإنجليزية</small>
-          <strong>Mohamed Mouri</strong>
-        </div>
-        <div class="detail">
-          <small>سنة الميلاد</small>
-          <strong>2008</strong>
-        </div>
-        <div class="detail">
-          <small>مكان الميلاد</small>
-          <strong>أدرار، الجزائر</strong>
-        </div>
-        <div class="detail">
-          <small>الإقامة</small>
-          <strong>تمنراست، الجزائر</strong>
-        </div>
-        <div class="detail">
-          <small>المجال الدراسي</small>
-          <strong>الهندسة الكهربائية</strong>
-        </div>
-        <div class="detail">
-          <small>اللغة</small>
-          <strong>العربية والإنجليزية</strong>
-        </div>
-        <div class="detail">
-          <small>الاهتمام الأساسي</small>
-          <strong>البرمجة والتكنولوجيا</strong>
-        </div>
-        <div class="detail">
-          <small>الهوية التقنية</small>
-          <strong>RUE Mouri</strong>
-        </div>
+
       </div>
-
     </div>
+
   </div>
 </section>
 
@@ -1212,4 +1283,4 @@ window.addEventListener("scroll", function() {
 </script>
 
 </body>
-    </html>
+  </html>
